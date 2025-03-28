@@ -251,10 +251,10 @@ if __name__ == '__main__':
     for class_name in class_names:
         super_seed(112358)
         images, masks, corr_types = load_corrupted_data(class_name=class_name, 
-                                                            data_dir='/mvtec_anomaly_detection_10/',
+                                                            data_dir='./data/MVTec/',
                                                             num_corrupted=40)
         
-        test_images, test_truths, test_class = load_testing_data(class_name=class_name, data_dir='/mvtec_anomaly_detection_10/' )
+        test_images, test_truths, test_class = load_testing_data(class_name=class_name, data_dir='./data/MVTec/' )
 
         test_InReaCh = InReaCh(images=images, max_channel_std=5, model=model, masks=masks, quite=False)
 
