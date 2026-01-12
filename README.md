@@ -2,6 +2,10 @@
 
 This repository contains the implementation of **InReaCh**, a fully unsupervised method for anomaly detection and localization in images. The method was introduced in ICCV 2023 and achieves state-of-the-art performance in unsupervised anomaly detection tasks.
 
+[Also check out the newer Online-InReaCh for better performance, tolerance to non-stationary distributions and online adaptation!](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07868.pdf)
+[Online InReaCh code can be found here!](https://github.com/DeclanMcIntosh/Online_InReaCh)
+
+
 ## Overview
 
 InReaCh leverages the concept of **Inter-Realization Channels** to extract high-confidence nominal patches from training data by associating them across image realizations. These nominal patches are used to build a model for detecting and localizing anomalies in test images. Unlike supervised one-class classification methods, InReaCh is fully unsupervised, simplifying dataset creation and broadening its applicability.
